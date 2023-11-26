@@ -2,10 +2,10 @@ import requests
 import subprocess
 
 def jfrogUpload():
-    url = ''
-    file_path = ''
-    username = ''
-    password = ''
+    url = 'http://54.208.57.226:8082/artifactory/generic-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
+    file_path = 'http://54.208.57.226:8082/artifactory/generic-local/'
+    username = 'admin'
+    password = 'Password1'
 
     with open(file_path, 'rb') as file:
         respose =  requests.put(url, auth=(username, password), data=file)
